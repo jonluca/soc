@@ -1,0 +1,53 @@
+ #
+ # SOC - Schedule of Classes WS API configuration
+ #
+ 
+ #
+ # Access SOC SOAP Services
+ #
+ soc_namespace:http://tempuri.org/
+ soc_wsdl:http://cmsdev-jhh102.usc.edu/soc-ws/soc-ws.asmx
+ iui_wsdl:http://cmsdev-jhh102.usc.edu/soc-ws/iui-ws.asmx
+ 
+ 
+ #
+ # SOC Data setup
+ #
+ soc_path:/info/www/test/soc
+ soc_uri:http://localhost/~rsdoiel/soc
+ 
+ #
+ # Database configuration for reverse lookup.
+ #
+ db_type:sqlite
+ db_name:/info/www/test/soc/databases/test_soc.sq2
+ db_perms:0666
+ 
+ #
+ # Department URL source
+ #
+ soc_depturls:/info/www/test/soc/urls.xml
+ 
+ #
+ # Test Fields
+ #
+ test1:This is test 1
+ test2:This is test 2
+ 
+ #
+ # Debug test
+ #
+ debug:1
+ 
+ #
+ # Cache Setup
+ #
+ soc_cache:/info/www/test/soc/tests/cache
+ syllabus_cache:/info/www/test/soc/tests/syllabus
+ 
+ #
+ # USC LDAP Host configuration
+ #
+ ldap_host:ldap.usc.edu
+ ldap_dn:o=usc.edu
+ 

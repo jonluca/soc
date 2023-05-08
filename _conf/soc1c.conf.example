@@ -1,0 +1,55 @@
+ #
+ # SOC - Schedule of Classes WS API configuration
+ #
+
+ #
+ # Access SOC SOAP Services
+ #
+ soc_namespace:http://tempuri.org/
+ #soc_wsdl:http://cmsdev-jhh102.usc.edu/soc-ws/soc-ws.asmx
+ #iui_wsdl:http://cmsdev-jhh102.usc.edu/soc-ws/iui-ws.asmx
+ soc_wsdl:https://camel2.usc.edu/SOC-WS/soc-ws.asmx
+ iui_wsdl:https://camel2.usc.edu/SOC-WS/iui-ws.asmx
+
+
+
+ #
+ # SOC Data setup
+ #
+ soc_path:/info/www/ws/soc
+ soc_uri:http://web-app.usc.edu/ws/soc
+
+ #
+ # Database
+ #
+ db_type:mysql
+ db_user:DATABASE_USER
+ db_password:DATABASE_PASSWORD
+ db_name:DATABASE_NAME
+ db_host:DATABASE_HOST
+
+
+ #
+ # Department URL source
+ #
+ soc_depturls:/www/soc/urls.xml
+
+ #
+ # Booklist URL source
+ #
+ booklist_url:http://www.usc.edu/aux-services/bookstore/booklist
+
+
+ #
+ # Cache Setup
+ #
+ soc_cache_type:db
+ soc_cache:soc_cache
+ soc_cache_refresh_key:Mary4adAL1ttleLamp
+
+ syllabus_cache:/info/www/test/soc/syllabus
+
+ #
+ # Log setup
+ #
+ log_path:/info/www/ws/soc/logs
